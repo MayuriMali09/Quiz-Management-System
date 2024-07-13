@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2DF3737-CF98-4556-B288-E2F5C1B07CD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quizapp</RootNamespace>
+    <AssemblyName>Quizapp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instruction_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instruction_page.Designer.cs">
+      <DependentUpon>Instruction_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page1.Designer.cs">
+      <DependentUpon>Page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page2.Designer.cs">
+      <DependentUpon>Page2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page3.Designer.cs">
+      <DependentUpon>Page3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page4.Designer.cs">
+      <DependentUpon>Page4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page5.Designer.cs">
+      <DependentUpon>Page5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page6.Designer.cs">
+      <DependentUpon>page51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page7.Designer.cs">
+      <DependentUpon>page52.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page8.Designer.cs">
+      <DependentUpon>page53.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page9.Designer.cs">
+      <DependentUpon>page54.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page10.Designer.cs">
+      <DependentUpon>page55.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page11.Designer.cs">
+      <DependentUpon>Page6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instruction_page.resx">
+      <DependentUpon>Instruction_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page1.resx">
+      <DependentUpon>Page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page2.resx">
+      <DependentUpon>Page2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page3.resx">
+      <DependentUpon>Page3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page4.resx">
+      <DependentUpon>Page4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page5.resx">
+      <DependentUpon>Page5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page6.resx">
+      <DependentUpon>page51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page7.resx">
+      <DependentUpon>page52.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page8.resx">
+      <DependentUpon>page53.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page9.resx">
+      <DependentUpon>page54.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page10.resx">
+      <DependentUpon>page55.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page11.resx">
+      <DependentUpon>Page6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="masterDataSet.xsc">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="masterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>masterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="masterDataSet.xss">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
